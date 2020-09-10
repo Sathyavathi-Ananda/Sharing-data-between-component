@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'inputOutput';
+  storedPosts = []
+  onPostAdd(event){
+    this.storedPosts.push(event)
+  }
 }

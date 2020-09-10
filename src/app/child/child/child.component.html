@@ -1,0 +1,13 @@
+<h3>Post data to parent</h3>
+
+<form>
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" name="title" required [(ngModel)]="post.title">
+  </div>
+  <div class="form-group">
+    <label>content</label>
+    <textarea name="content" class="form-control" name="title" required [(ngModel)]="post.content"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onAddPost()">create</button>
+</form>
